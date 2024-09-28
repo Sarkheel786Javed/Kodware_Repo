@@ -4877,44 +4877,72 @@ textarea.form-control {
   }
 } */
 
+/* General styles for smaller screens */
 @media (max-width: 767px) {
   .About_us_Section,
-.About_us_Section2,
-.About_us_Section3,
-.About_us_Section4,
-.About_us_Section5 {
-  display: block;
+  .About_us_Section2,
+  .About_us_Section3,
+  .About_us_Section4,
+  .About_us_Section5 {
+    display: block;
+    width: 100%; /* Ensure sections take full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .main1,
+  .main2,
+  .main3,
+  .main4,
+  .main5 {
+    justify-content: start; /* Avoid negative margins */
+    width: 100%;
+  }
+
+  .main1 .one,
+  .main2 .one2,
+  .main3 .one3,
+  .main4 .one4,
+  .main5 .one5 {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+  }
+
+  .two,
+  .two2,
+  .two3,
+  .two4,
+  .two5,
+  .two6,
+  .three,
+  .three_child {
+    display: none;
+  }
+
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    width: 100%;
+    padding: 10px;
+    border-left: 0px solid lightgrey;
+  }
+  /* Adjust this to avoid causing horizontal scroll */
+.three {
+  margin-right: 0;
 }
-.main1,
-.main2,
-.main3,
-.main4,
-.main5 {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 100%;
+body {
+  overflow-x: hidden;
 }
-.main1 .one, .main2 .one2, .main3 .one3, .main4 .one4, .main5 .one5 {
-  width: 100%;
-  padding: 10px 20px;
-  border: 1px solid lightgrey;
+
+.about_us_cover {
+  overflow-x: hidden;
 }
-.two,
-.two2,
-.two3,
-.two4,
-.two5,
-.two6,
-.three,
-.three_child
-{
-display: none;
+
 }
-.section1, .section2, .section3, .section4, .section5 {
-  width: 100%;
-  padding: 10px;
-  border-left: 0px solid lightgrey;
-  z-index: -1;
-}
+
+/* Global fix to prevent horizontal scroll on the entire page */
+body {
+  overflow-x: hidden;
 }

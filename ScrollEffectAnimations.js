@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
           i = 0; // Reset index to restart the animation
           targetElement.innerHTML = staticText; // Reset only the animated part, keeping "Ready"
           typeWriter(); // Restart the typing animation
-        }, 2000); // 2-second pause after finishing the animation
+        }, 1000); // 2-second pause after finishing the animation
       }
     }
   
