@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kodware - Where we code for you</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="f746dc9b-2c61-4af7-a45e-fed62580f333">
+        (function (w, d) {
+            !(function (a, b, c, d) {
+                a[c] = a[c] || {};
+                a[c].executed = [];
+                a.zaraz = { deferred: [], listeners: [] };
+                a.zaraz.q = [];
+                a.zaraz._f = function (e) {
+                    return function () {
+                        var f = Array.prototype.slice.call(arguments);
+                        a.zaraz.q.push({ m: e, a: f });
+                    };
+                };
+                for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g);
+                a.zaraz.init = () => {
+                    var h = b.getElementsByTagName(d)[0],
+                        i = b.createElement(d),
+                        j = b.getElementsByTagName("title")[0];
+                    j && (a[c].t = b.getElementsByTagName("title")[0].text);
+                    a[c].x = Math.random();
+                    a[c].w = a.screen.width;
+                    a[c].h = a.screen.height;
+                    a[c].j = a.innerHeight;
+                    a[c].e = a.innerWidth;
+                    a[c].l = a.location.href;
+                    a[c].r = b.referrer;
+                    a[c].k = a.screen.colorDepth;
+                    a[c].n = b.characterSet;
+                    a[c].o = new Date().getTimezoneOffset();
+                    if (a.dataLayer) for (const n of Object.entries(Object.entries(dataLayer).reduce((o, p) => ({ ...o[1], ...p[1] }), {}))) zaraz.set(n[0], n[1], { scope: "page" });
+                    a[c].q = [];
+                    for (; a.zaraz.q.length;) {
+                        const q = a.zaraz.q.shift();
+                        a[c].q.push(q);
+                    }
+                    i.defer = !0;
+                    for (const r of [localStorage, sessionStorage])
+                        Object.keys(r || {})
+                            .filter((t) => t.startsWith("_zaraz_"))
+                            .forEach((s) => {
+                                try {
+                                    a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s));
+                                } catch {
+                                    a[c]["z_" + s.slice(7)] = r.getItem(s);
+                                }
+                            });
+                    i.referrerPolicy = "origin";
+                    i.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c])));
+                    h.parentNode.insertBefore(i, h);
+                };
+                ["complete", "interactive"].includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init);
+            })(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+        id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">KODWARE<span>.</span></a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home-section" class="nav-link"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-section" class="nav-link"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services-section" class="nav-link"><span>Services</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects-section" class="nav-link"><span>Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-section" class="nav-link"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home-section" class="hero">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+            <div class="carousel-inner">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"><i class="bi bi-arrow-left-short"></i></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"><i class="bi bi-arrow-right-short"></i></button>
+                    <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/bg_1.jpg" class="d-block w-100 img" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="text" id="text">
+                            <span class="subheading" id="subheading-text">Welcome to Kodware!</span>
+                            <h3 class="mb-4 mt-3 fw-bold Main_text" id="main-text">Creative Software Solutions</h3>
+                            <div id="contact-button-container" style="display: none;">
+                                <a href="#contact-section">
+                                    <button class="learn-more button">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">Contact Us</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bg_2.jpg" class="d-block w-100 img" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <div class="text" id="text">
+                            <span class="subheading">Run your business on auopilot mode.</span>
+                            <h3 class="mb-4 mt-3 fw-bold Main_text" id="main-text">We at KODWARE Automate processes.
+                            </h3>
+                            <div>
+                                <a href="#contact-section">
+                                    <button class="learn-more button">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">Contact Us</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div> -->
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+        </div>
+        <!-- <div class="home-slider owl-carousel">
+                <div class="slider-item">
+                    <div class="overlay"></div>
+                    <div class="container-fluid px-md-0">
+                        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                            <div class="one-third order-md-last img" style="background-image: url(images/bg_1.jpg);">
+                                <div class="overlay"></div>
+                                <div class="overlay-1"></div>
+                            </div>
+                            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                                <div class="text">
+                                    <span class="subheading">Welcome to Kodware!</span>
+                                    <h1 class="mb-4 mt-3 fw-bold Main_text">Creative <span>Software</span> Solutions</h1>
+                                    <a href="#contact-section" >
+                                        <button class="learn-more button">
+                                            <span class="circle" aria-hidden="true">
+                                              <span class="icon arrow"></span>
+                                            </span>
+                                            <span class="button-text">Contact Us</span>
+                                          </button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="overlay"></div>
+                    <div class="container-fluid px-md-0">
+                        <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                            <div class="one-third order-md-last img" style="background-image: url(images/bg_2.jpg);">
+                                <div class="overlay"></div>
+                                <div class="overlay-1"></div>
+                            </div>
+                            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                                <div class="text">
+                                    <span class="subheading">Run your business on auopilot mode.</span>
+                                    <h1 class="mb-4 mt-3 fw-bold Main_text">We at <span>KODWARE</span> Automate processes.</h1>
+                                    <a href="#contact-section" >
+                                        <button class="learn-more button">
+                                            <span class="circle" aria-hidden="true">
+                                              <span class="icon arrow"></span>
+                                            </span>
+                                            <span class="button-text">Contact Us</span>
+                                          </button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    </section>
+    <section class="ftco-counter img bg-light" id="section-counter">
+        <div class="container">
+            <div class="row" style="display: none;">
+                <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 d-flex">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-suitcase"></span>
+                        </div>
+                        <div class="text">
+                            <strong class="number" data-number="90">0</strong>
+                            <span>Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 d-flex">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-loyalty"></span>
+                        </div>
+                        <div class="text">
+                            <strong class="number" data-number="42">0</strong>
+                            <span>Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 d-flex">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-coffee"></span>
+                        </div>
+                        <div class="text">
+                            <strong class="number" data-number="20">0</strong>
+                            <span>Maintanence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 d-flex">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-calendar"></span>
+                        </div>
+                        <div class="text">
+                            <strong class="number" data-number="15">0</strong>
+                            <span>Years experienced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+            <div class="container">
+                <div class="row d-flex no-gutters">
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay"></div>
+                            <div class="img d-flex align-self-stretch align-items-center" style="background-image: url(images/about-1.jpg);"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+                        <div class="py-md-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+                                    <span class="subheading">Our Intro</span>
+                                    <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Us</h2>
+                                    <p>Welcome to KODWARE, where innovation meets technology to transform your digital world! We are a dynamic and forward-thinking software company dedicated to providing cutting-edge solutions that empower businesses and individuals to thrive in the rapidly evolving digital landscape.</p>
+                                    <p>At KODWARE, we believe that technology has the power to shape a brighter future. Since our inception in 15 Years, we have been at the forefront of software development, consistently delivering exceptional products and services to clients worldwide. Our team of talented and passionate professionals brings together expertise from various domains, enabling us to tackle diverse challenges with ingenuity and precision.</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="my-interest d-lg-flex w-100">
+                                        <div class="interest-wrap d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-listening"></span>
+                                            </div>
+                                            <div class="text">Dot Net</div>
+                                        </div>
+                                        <div class="interest-wrap d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-suitcases"></span>
+                                            </div>
+                                            <div class="text">Python</div>
+                                        </div>
+                                        <div class="interest-wrap d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-video-player"></span>
+                                            </div>
+                                            <div class="text">Angular</div>
+                                        </div>
+										<div class="interest-wrap d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-coffee"></span>
+                                            </div>
+                                            <div class="text">React</div>
+                                        </div>
+                                        <div class="interest-wrap d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-football"></span>
+                                            </div>
+                                            <div class="text">Java</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    <section class="ftco-section" id="services-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    <span class="subheading">We are great at</span>
+                    <h2 class="mb-4">We do awesome services for our clients</h2>
+                </div>
+            </div>
+            <script src="./ScrollEffectAnimations.js"></script>
+
+            <div class="cover_Services">
+                <div class="sparkle u-hover--sparkle shadow ">
+                    <div class="">
+                        <div class=""><span class="flaticon-3d-design"></span></div>
+                        <div class="">
+                            <h3 class="heading mb-3">Custom Software Development</h3>
+                            <p>We specialize in crafting tailor-made software applications that precisely meet our
+                                clients' specific needs and business objectives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sparkle u-hover--sparkle shadow ">
+                    <div class="">
+                        <div class=""><span class="flaticon-app-development"></span></div>
+                        <div class="">
+                            <h3 class="heading mb-3">AI & ML</h3>
+                            <p>Leverage the potential of AI and ML to gain valuable insights, automate processes, and
+                                optimize business operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sparkle u-hover--sparkle shadow ">
+                    <div class="">
+                        <div class=""><span class="flaticon-web-programming"></span></div>
+                        <div class="media-body">
+                            <h3 class="">Web Development</h3>
+                            <p>Our expert developers build intuitive, scalable, and feature-rich web and mobile
+                                applications to enhance user experience and reach a broader audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sparkle u-hover--sparkle shadow ">
+                    <div class="">
+                        <div class=""><span class="flaticon-branding"></span></div>
+                        <div class="">
+                            <h3 class="heading mb-3">Cloud Solutions</h3>
+                            <p>We offer secure and scalable cloud-based solutions that enable seamless data access and
+                                storage while reducing infrastructure costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="container-fluid about_us_cover">
+        <h2 class="mb-5 Heading_about_us fw-bold text-center">About Kodware</h2>
+        <p class="text-center">At Kodware, we believe that digital solutions are more than just code—they’re a gateway
+            to transforming
+            businesses.
+            <br> Our team of dedicated professionals is passionate about turning your ideas into reality through
+            tailored web and mobile development services.
+        </p>
+        <p class="text-center">
+            With a strong foundation in UI/UX design, frontend and backend development, we’ve partnered with businesses
+            <br>
+            of all sizes to create solutions that not only meet their current needs but scale as they grow.
+            <br>Whether
+            you're a startup looking for an innovative web application or an enterprise needing complex integrations,
+            <br>
+            Kodware is here to provide the expertise you need.
+        </p>
+        <div class="row mt-5">
+            <div class="col-12">
+
+                <div class="w-100 mb-5">
+
+                    <div id="about-section" class="About_us_Section">
+                        <div class="main1">
+                            <div class="one">Our Mission</div>
+                            <div class="two"></div>
+                            <div class="three">
+                                <div class="three_child"></div>
+                            </div>
+                        </div>
+                        <div class="section1">
+                            <p>Our mission is simple: to empower businesses with cutting-edge digital solutions that are
+                                innovative, reliable, and user-friendly. We believe that every project, no matter the
+                                size, deserves our full attention, creative problem-solving, and technical precision.
+                            </p>
+                            <p>At Kodware, success isn’t just about delivering a functional product—it’s about building
+                                long-lasting relationships with our clients, helping them grow and thrive in a
+                                constantly evolving digital landscape.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="about-section2" class="About_us_Section2">
+                        <div class="main2">
+                            <div class="one2">Our Vision</div>
+                            <div class="two2"></div>
+                            <div class="three">
+                                <div class="three_child"></div>
+                            </div>
+                        </div>
+                        <div class="section2">
+                            <p>We envision a world where businesses of all sizes can leverage the power of technology to
+                                unlock new possibilities. By continually pushing the boundaries of innovation, we aim to
+                                set new standards in web and mobile development, fostering a future where digital
+                                transformation is accessible to all.</p>
+                        </div>
+                    </div>
+                    <div id="about-section3" class="About_us_Section3">
+                        <div class="main3">
+                            <div class="one3">What Sets Us Apart</div>
+                            <div class="two3"></div>
+                            <div class="three">
+                                <div class="three_child"></div>
+                            </div>
+                        </div>
+                        <div class="section3">
+                            <ul>
+                                <li>
+                                    Client-Centric Approach: Your goals are our priority. We listen, we collaborate, and
+                                    we
+                                    deliver solutions that align with your business objectives.
+                                </li>
+                                <li>
+                                    Technical Expertise: Our team is proficient in the latest technologies—React.js,
+                                    Angular, .NET Core, React Native, Ionic, Flutter, and more. This allows us to build
+                                    robust solutions tailored to your specific needs.
+                                </li>
+                                <li>
+                                    Custom Solutions: No two businesses are the same. That’s why we offer bespoke
+                                    solutions,
+                                    designed to address your unique challenges and opportunities.
+                                </li>
+                                <li>
+                                    Quality Assurance: We hold ourselves to the highest standards of quality, ensuring
+                                    that
+                                    every project is rigorously tested and optimized before delivery.
+                                </li>
+                                <li>
+                                    Agility & Innovation: In the fast-paced world of technology, we stay ahead of the
+                                    curve
+                                    by adopting the latest tools and trends. This allows us to deliver forward-thinking
+                                    solutions that keep your business competitive.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="about-section4" class="About_us_Section4">
+                        <div class="main4">
+                            <div class="one4">Our Team</div>
+                            <div class="two4"></div>
+                            <div class="three">
+                                <div class="three_child"></div>
+                            </div>
+                        </div>
+                        <div class="section4">
+                            <p>
+                                Our team is made up of seasoned professionals with a diverse range of skills in design,
+                                development, and project management. We work as a cohesive unit, combining our
+                                collective experience to create products that are both innovative and effective. We
+                                thrive on solving complex problems and love the challenge of turning a concept into a
+                                fully-functional, high-performance product.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="about-section5" class="About_us_Section5">
+                        <div class="main5">
+                            <div class="one5">Our Values</div>
+                            <div class="two5"></div>
+                            <div class="three">
+                                <div class="three_child"></div>
+                            </div>
+                        </div>
+                        <div class="section5">
+                            <ul>
+                                <li>
+                                    Innovation: We are passionate about leveraging the latest technologies and best
+                                    practices to drive innovation in every project.
+                                </li>
+                                <li>
+                                    Collaboration: We believe the best results come from working closely with our
+                                    clients.
+                                    Your feedback and vision are integral to our process.
+                                </li>
+                                <li>
+                                    Excellence: From the first design mockup to the final product, we are committed to
+                                    delivering the highest quality in everything we do.
+                                </li>
+                                <li>
+                                    Integrity: Trust is at the heart of our client relationships. We are transparent,
+                                    communicative, and dedicated to delivering on our promises.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-hireme text-center">
+        <div class="text-center"><label class="" id="start-project"></label></div>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-9 col-lg-9 d-flex align-items-center">
+                    <div class="w-100 py-4">
+                        <h2>Have a project on your mind.</h2>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country, in which roasted parts of sentences fly.</p>
+                        <p class="mb-0"><a href="#" class="btn btn-white py-3 px-4">Contact us</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 d-flex align-items-end">
+                    <img src="images/author.png" class="img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<section class="ftco-section ftco-project" id="projects-section">
+            <div class="container-fluid px-md-4">
+                <div class="row justify-content-center pb-5">
+                    <div class="col-md-12 heading-section text-center ftco-animate">
+                        <span class="subheading">Accomplishments</span>
+                        <h2 class="mb-4">Our Projects</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-7.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-8.jpg);">
+                            <div class="overlay"></div>
+                            <div class="text text-center p-4">
+                                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                                <span>Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      -->
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Contact us</span>
+                    <h2 class="mb-4">Have a Project?</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row block-9">
+                <div class="col-md-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.263810118942!2d73.01934577630293!3d33.59845894155421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95047dd3fdef%3A0xfce324f831c9ef9c!2sPak%20Tower!5e0!3m2!1sen!2s!4v1707807991848!5m2!1sen!2s"
+                        width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4 d-flex pl-md-5">
+                    <div class="row">
+                        <div class="dbox w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-map-marker"></span>
+                            </div>
+                            <div class="text">
+                                <p><span>Address:</span> Pak Tower, Range Road, Rawalpindi Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="text">
+                                <p><span>Phone:</span> <a href="tel://923325365633">+ 923325365633</a></p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-paper-plane"></span>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    <span>Email:</span>
+                                    <a href="">
+                                        <span class="__cf_email__"
+                                            data-cfemail="8de4e3ebe2cdf4e2f8fffee4f9e8a3eee2e0">info@kodware.net</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <div class="text">
+                                <p><span>Website</span> <a href="#">www.kodware.net</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Lets talk about</h2>
+                        <p>The problems you are facing at your workplace, we are here to resolve the problem and fly
+                            your business on auto pilot mode.</p>
+                        <p><a href="#" class="btn btn-primary">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Links</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a>
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Services</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>Business Strategy</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-chevron-right mr-2"></span>Data Analysis</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map marker"></span><span class="text">Pak Tower, Range Road,
+                                        Rawalpindi Pakistan</span></li>
+                                <li>
+                                    <a href="tel://923325365633"><span class="icon fa fa-phone"></span><span
+                                            class="text">+92 332 536 5633</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon fa fa-paper-plane pr-4"></span><span class="text"><span
+                                                class="__cf_email__"
+                                                data-cfemail="1970777f765960766c6b7d7674787077377a7674">info@kodware.net</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="ftco-footer-social list-unstyled mt-2">
+                            <li class="ftco-animate">
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-23581568-13");
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039"
+        integrity="sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g=="
+        data-cf-beacon='{"rayId":"7e918e450d7544af","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
